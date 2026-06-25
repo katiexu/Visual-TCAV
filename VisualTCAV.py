@@ -373,7 +373,7 @@ class LocalVisualTCAV(VisualTCAV):
 			# Random activations
 			random_acts = self._compute_random_activations(cache_random, layer_name)
 
-			# Compute the feature maps
+			# Compute the feature maps     对应 CARS 的  H_TRAIN
 			feature_maps = self.model.model_wrapper.get_feature_maps(
 				self.model.preprocessing_function(self.resized_imgs),
 				layer_name
